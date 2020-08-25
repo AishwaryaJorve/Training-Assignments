@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+fieldset.a{
+  width:50px;
+  height:50%;
+}
+table.a{
+  border: 1px solid black;
+  width:90%;
+  height:50px;
+  empty-cells: show
+}
+table.b{
+width:780px;
+  height:90px;
+}
+table{
+  width:980px;
+  height:90px;
+}
+div.small{
+overflow:scroll;
+}
+div.big{
+margin:50px 150px ;
+}
+
+</style>
+</head>
+<body>
+<div class="big">
+<form>
+<fieldset class="a">
+      
+           <table>
+                 <legend>Personal Information:</legend>
+                  <br><br><br>
+                  <tr>
+                      <td>ID</td>
+                      <td>
+                              <input type="text"  name="fname">
+                      </td>
+                      <td>Age</td>
+                      <td>
+                              <input type="number"  name="age">
+                      </td>
+                  </tr>
+                   <tr>
+                      <td>FirstName</td>
+                      <td>
+                              <input type="text"  name="fname">
+                      </td>
+                      <td>City</td>
+                      <td>
+                              <input type="number"  name="age">
+                      </td>
+                  </tr>
+                   <tr>
+                      <td>Last Name</td>
+                      <td>
+                              <input type="text"  name="fname">
+                      </td>
+                      <td>State</td>
+                      <td>
+                              <input type="number"  name="age">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Father Name</td>
+                      <td>
+                              <input type="text"  name="fname">
+                      </td>
+                      <td>Pincode</td>
+                      <td>
+                              <input type="number"  name="age">
+                      </td>
+                  </tr>
+           
+          </table>     
+<br><br><br>
+
+<h7>Educational Information :</h7>
+<div class="small">
+ <table  class="a" border="1">
+      
+       <tr><th>Year</th><th>Education</th><th>Percentage</th><th>Result</th>
+	<th>Show Row</th></tr>
+       <tr height="30">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+             <td></td>
+        </tr>
+ </table>
+      </div>
+<br><br>
+<table border="1">
+<tr>
+ <td><button type="button">Add Row</button> <button type="button">Delete Row
+ </button></td>
+ </tr>
+ <tr>
+ <td><button type="button">Save Detail</button> <button type="button">Preview Detail</button>
+ <button type="button">cancel</button></td>
+</tr>
+ <tr>
+  <td><button type="button">Stringify Detail</button> </td>
+   </tr>
+ 
+</table>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
