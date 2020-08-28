@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <body>
+      
+      <script>
+        function check()
+           {
+               alert(document.Registration.name.value+" "+document.Registration.lname.value+" "+document.Registration.desc.value
+                    +" "+document.Registration.phno.value+" "+document.Registration.adress.value+" "+document.Registration.city.value
+                    +" "+document.Registration.state.value+" "+document.Registration.pcode.value)
+               
+           }
+       </script>
+        
+        <form name="Registration" style="text-align: center">
+           <pre> <!--To print as it is-->
+           <h1 style="text-align: center">Registartion Form Of Student</h1>
+            Name :         <input type="text" name="name"><br><br>
+            Last Name:     <input type="text" name="lname"><br><br>
+            Designation:   <input type="text" name="desc"><br><br>
+            Mobile Number: <input type="number" name="phno"><br><br>
+            Address:       <input type="text" name="adress"><br><br>
+            city:          <input type="text" name="city"><br><br>
+            State:         <input type="text" name="state"><br><br>
+            Pin Code:      <input type="text" name="pcode"><br><br>
+            <input type="submit" value="submit" onclick="check();"/><br><br>       
+            <input type="reset" value="reset"/>
+            </pre>                       
+        </form>
+        
+    </body>
+</html>
