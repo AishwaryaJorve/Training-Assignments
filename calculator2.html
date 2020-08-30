@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>calculator page</title>
+        <style>
+            .formstyle{
+                width: 330px;
+                height: 370px;
+                margin: auto;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            input{
+                width:70px;
+                height:30px;
+                border-color: dimgray;
+                border-radius: 4px;
+            }
+            input.ans{
+                margin-left: 20px;
+                margin-top: 30px;;                    
+                width:290px;
+                height:40px;
+            }
+            input.a{
+                margin-left: 20px;
+                width:70px;
+                height:30px;
+            }
+            input.b{
+                margin-left: 20px;
+                width:70px;
+                height:30px;
+            }
+            input.c{
+                margin-left: 20px;
+                width:70px;
+                height:30px;
+            }
+            input.d{
+                margin-left: 20px;
+                width:70px;
+                height:30px;
+            }
+            h4{
+                margin-left: 155px;
+            }
+        </style>
+        <script type="text/javascript" src="cal.js"></script>
+    </head>
+    <body>
+        <div class="formstyle">
+            <form name="form">
+                <input class="ans" type="button" id="answer"><br><br><br>
+                <br><br/>
+                <input class="a" type="button" value="1" onclick="getNumber(1);">
+                <input type="button" value="2" onclick="getNumber(2);">
+                <input type="button" value="3" onclick="getNumber(3);">
+                <input type="button" value="+" onclick="getNumber('+')">
+                <br><br/>
+                <input class="b" type="button" value="4" onclick="getNumber(4);">
+                <input type="button" value="5" onclick="getNumber(5);">
+                <input type="button" value="6" onclick="getNumber(6);">
+                <input type="button" value="-" onclick="getNumber('-');">
+                <br><br/>
+                <input class="c" type="button" value="7" onclick="getNumber(7);">
+                <input type="button" value="8" onclick="getNumber(8);">
+                <input type="button" value="9" onclick="getNumber(9);">
+                <input type="button" value="x" onclick="getNumber('*');">
+                <br><br/>
+                <input class="d" type="button" value="c" onclick="clearScreen();">
+                <input type="button" value="0" onclick="getNumber(0);">
+                <input type="button" value="=" onclick="compute();"> 
+                <input type="button" value="/" onclick="getNumber('/');">
+                <h4>Liviano Budgets Rooms</h4>
+            </form>
+        </div>
+    </body>
+</html>
