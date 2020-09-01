@@ -1,27 +1,30 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
+<meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Count page</title>
-        <style>
-            form{
-                text-align: center;
-                margin-top: 200px;
-            }
-        </style>
-        
-         <script type="text/javascript" src="cal2.js"></script>
-         
-    </head>
+       <link rel="stylesheet" href="cal2.css">
+           <script type="text/javascript" src="cal2.js"></script>
+   </head>
     <body>
       <form>
   
-Number1: <input type="number" name="no1" id="no1"><br><br>
-Number2: <input type="number" name="no1" id="no1"><br><br>
- Result: <input type="number" name="ans" id="ans"><br><br> 
+Number1: <input type="text" name="no1" id="num1"><br><br>
+Number2: <input type="text" name="no2" id="num2"><br><br>
+ Result: <input type="text" name="ans" id="answer"><br><br> 
               
+<!--
        <input type="button" value="Addition" id="add" onclick="add()">
        <input type="button" value="Substraction" id="sub" onclick="sub()">
        <input type="button" value="Multiplication" id="mul" onclick="mul()">
        <input type="button" value="Division" id="div" onclick="div()">
+-->
+    <button type="button" onclick="add()">Addition</button>
+     <button type="button" onclick="sub()">Substraction</button>
+     <button type="button" onclick="mul()">Multiplication</button>
+     <button type="button" onclick="div()">Division</button>
       </form> 
+   
     </body>
 </html>
