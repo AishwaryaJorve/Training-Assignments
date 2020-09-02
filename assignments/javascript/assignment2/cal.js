@@ -1,5 +1,6 @@
 function getNumber(num)
-{
+{   
+    //to get no and operator as input
     var input_var=document.getElementById('answer');
     switch(num)
         {
@@ -45,8 +46,33 @@ function getNumber(num)
     
 function compute(){
     
+    let resultString = document.getElementById('answer').value; // '2+9-1
+    let no1=resultString[0];
+    let oper=resultString[1];
+    let no2=resultString[2];
+     
+     
+
+    switch(oper)
+    {
+        case '+':
+            let n1=parseInt(no1);
+            let n2=parseInt(no2);
+            document.getElementById('answer').value=n1+n2;
+            break;
+        case '-':
+            document.getElementById('answer').value=no1-no2;
+            break;
     
-    let resultString = document.getElementById('answer').value; // '2+9-1'
-    let finalResutlt = eval(resultString);  //10
-    document.getElementById('answer').value = finalResutlt;
+        case '*':
+            document.getElementById('answer').value=no1*no2;
+            break;   
+        
+        case '/':
+            document.getElementById('answer').value=no1/no2;
+            break;     
+            
+    }
+    
+
 }
