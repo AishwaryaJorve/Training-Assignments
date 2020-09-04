@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    
+</head>
+<body>
+
+<h2>Employee</h2>
+
+<div>
+
+Employee 1:<input type="text" id="emp1"/><br><br>
+Employee 2:<input type="text" id="emp2"/><br><br>
+Employee 3:<input type="text" id="emp3"/><br><br>
+Employee 4:<input type="text" id="emp4"/><br><br>
+Employee 5:<input type="text" id="emp5"/><br><br>
+Employee 6:<input type="text" id="emp6"/><br><br>
+Employee 7:<input type="text" id="emp7"/><br><br>
+Employee 8:<input type="text" id="emp8"/><br><br>
+Employee 9:<input type="text" id="emp9"/><br><br>
+Employee 10:<input type="text" id="emp10"/><br><br>
+
+
+<button id="demo" onclick="alternative()">Alternative Employee</button>
+
+
+
+
+
+</div>
+
+<script>
+    function alternative()
+       {
+           var emp=new Array();
+           emp[0]=document.getElementById("emp1").value;
+           emp[1]=document.getElementById("emp2").value;
+           emp[2]=document.getElementById("emp3").value;
+           emp[3]=document.getElementById("emp4").value;
+           emp[4]=document.getElementById("emp5").value;
+           emp[5]=document.getElementById("emp6").value;
+           emp[6]=document.getElementById("emp7").value;
+           emp[7]=document.getElementById("emp8").value;
+           emp[8]=document.getElementById("emp9").value;
+           emp[9]=document.getElementById("emp10").value;
+           
+    var i=0;
+    for(i=0;i<emp.length;i++)
+        {
+            if(i%2!=0)
+            {
+               document.write("<h1>"+emp[i]+"</h1>");
+            }
+        }
+           
+        }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first capital</title>
+    
+</head>
+<body>
+
+<h2>First Letter Capital Of Each word</h2>
+
+<div>
+
+Enter the String:<input type="text" id="string"/><br><br>
+
+<button id="demo" onclick="caseChange()">First Letter Capital</button><br><br><br><br>
+Output :<input type="text" id="result"/>
+
+</div>
+
+<script type="text/javascript">
+    
+    function caseChange() 
+    {
+      var str=document.getElementById("string").value;
+      var newStr=" ";
+      var lenStr=str.length;
+        for(var i=0;i<lenStr;i++)
+            {
+                if(i==0)
+                    {
+                        newStr+=str[i].toUpperCase();
+                    }
+                else if(str[i-1]==" ")
+                    {
+                        newStr+=str[i].toUpperCase();
+                    }
+                else
+                    {
+                        newStr+=str[i].toLowerCase();
+                    }
+            }
+        document.getElementById("result").value=newStr;
+        //document.write(newStr);
+      
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+
+<h2>Question 10</h2>
+<button onclick="prin()">Go</button>
+
+<script>
+
+    function prin()
+    {
+        var i=0;
+        var j=0;
+        var k=0;
+    var first=['a','b','c'];
+    var second=[1,2,3];
+    
+        var total=first.length+second.length;
+    
+    var third=[];
+    for(i=0;i<total;i++)
+        {
+           if(i%2==0)
+                {
+                    third[i]=first[k];
+                    k++;
+                }
+             else{
+                 third[i]=second[j];
+                 j++;
+             }
+        }
+        var q=0;
+        for(q=0;q<total;q++)
+            {
+              document.write(third[q]+",");
+            }
+    }    
+    
+</script>
+    </body>
+</html>

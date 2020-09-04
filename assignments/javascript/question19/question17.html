@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print String</title>
+    
+</head>
+<body>
+  <h1>Enter the 10 assessment marks</h1>
+   
+     <input type="text" id="m1"/><br><br>
+     <input type="text" id="m2"/><br><br>
+     <input type="text" id="m3"/><br><br>
+     <input type="text" id="m4"/><br><br>
+     <input type="text" id="m5"/><br><br>
+     <input type="text" id="m6"/><br><br>
+     <input type="text" id="m7"/><br><br>
+     <input type="text" id="m8"/><br><br>
+     <input type="text" id="m9"/><br><br>
+     <input type="text" id="m10"/><br><br><br><br>
+     
+     <button onclick="avgMarks();">Average</button><br><br><br><br>
+     
+    Result: <input type="text" id="Result"/><br><br>
+     
+     <script>
+    
+         function avgMarks()
+         {
+             var m1=parseFloat(document.getElementById("m1").value);
+             var m2=parseFloat(document.getElementById("m2").value);
+             var m3=parseFloat(document.getElementById("m3").value);
+             var m4=parseFloat(document.getElementById("m4").value);
+             var m5=parseFloat(document.getElementById("m5").value);
+             var m6=parseFloat(document.getElementById("m6").value);
+             var m7=parseFloat(document.getElementById("m7").value);
+             var m8=parseFloat(document.getElementById("m8").value);
+             var m9=parseFloat(document.getElementById("m9").value);
+             var m10=parseFloat(document.getElementById("m10").value);
+             
+             var sum=m1+m2+m3+m4+m5+m6+m7+m8+m9+m10;
+             document.getElementById("Result").value=sum/10;
+             
+         }
+         
+     </script>
+      
+</body>
+</html>

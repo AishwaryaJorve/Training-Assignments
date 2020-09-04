@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print String</title>
+    
+</head>
+<body>
+
+
+
+    
+    
+    <h3 id="error1">isError(new Error("abcd"))</h3>
+    <h3 id="error2">isError(20)</h3>
+    <h3 id="error3">isError('abcd')</h3>
+    
+    <script>
+    
+        function isError(i)
+        {
+            var ip=i;
+            return ip instanceof Error || toString.call(ip) === '[object Error]';
+        }
+        
+        document.getElementById("error1").innerHTML+=isError(new Error("abcd"));
+        document.getElementById("error2").innerHTML+=isError(20);
+        document.getElementById("error3").innerHTML+=isError('abcd');
+        
+        console.log(isError(new Error("abc")));
+        console.log(isError(20));
+        console.log(isError('abcd'));
+    
+    </script>
+
+    </body>
+</html>

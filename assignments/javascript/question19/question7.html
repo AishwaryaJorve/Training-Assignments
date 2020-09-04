@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area of traingle</title>
+    
+</head>
+<body>
+
+<h2>Area of Traingle</h2>
+
+<div>
+
+side 1:<input type="number" id="side1"/><br><br>
+side 2:<input type="number" id="side2"/><br><br>
+side 3:<input type="number" id="side3"/><br><br>
+
+<button id="demo" onclick="areaTriangle()">Area</button><br><br><br><br>
+
+Result:<input type="number" id="result"/>
+
+
+
+</div>
+
+<script>
+    function areaTriangle()
+       {
+            var s1=parseFloat(document.getElementById("side1").value);  
+            var s2=parseFloat(document.getElementById("side2").value);
+            var s3=parseFloat(document.getElementById("side3").value);
+            var sum=s1+s2+s3;
+            var x=sum/2;
+            var area=Math.sqrt(x*((x-s1)*(x-s2)*(x-s3)));
+            
+            document.getElementById("result").value=area;
+        }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+
+<h1>No of Occurance Of Letter in String</h1>
+  
+  Enter the String: <input type="text" id="str"><br><br>
+        <button onclick="result()">Go To See</button>
+        
+        <script type="text/javascript">
+            
+            
+            function result()
+            {
+                let str=document.getElementById("str").value;
+                let tempArray=str.split('');
+                //document.write(tempArray);
+                let letters=[];
+                let count=1;
+                for(let i=0;i<tempArray.length;i++)
+                    {
+                        if(tempArray[i]===tempArray[i+1])
+                            {
+                                count++;
+                            }
+                         else{
+                             let value=`${count}${tempArray[i]}`;
+                             letters=[...letters,value];
+                             count=1;
+                         }
+                    }
+                var last1=letters.join('');
+            
+                  document.write(last1);
+                 
+            }
+    
+     
+       </script>
+         
+</body>
+</html>
