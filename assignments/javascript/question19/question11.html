@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter the Information of Mobile</h1><br><br>
+   Model:<input type="text" id="model"/><br><br>
+   Brand<input type="text" id="brand"/><br><br>
+   Price:<input type="text" id="price"/><br><br>
+    
+    
+    <button id="go" onclick="go()">See Info</button>
+    
+    <script>
+     function go()
+        {
+            
+            var model=document.getElementById("model").value;
+            var brand=document.getElementById("brand").value;
+            var price=Number.parseFloat(document.getElementById("price").value);
+            
+            if(Number.isNaN(price)||!brand||!model)
+                {
+                    alert("Please Enter the Valid Information");
+                    return;
+                }
+            
+            document.write("Model Name :"+model);
+            document.write("<br>Brand is :"+brand);
+            document.write("<br> Price is :"+price);
+            
+        }
+    
+    </script>
+
+    
+    </body>
+    </html>
