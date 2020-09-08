@@ -1,0 +1,32 @@
+form{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1.header{
+    text-align: center;
+    margin-top: 40px;
+}
+.line1{
+    border: 2px solid;
+    color: red;
+    margin-top: 50px;
+}
+
+
+.line2{
+    margin-top: 60px;
+    border: 2px solid;
+    color: black
+}
+.line0{
+    margin-top: auto;
+    border: 2px solid;
+    color: red;
+    
+}
