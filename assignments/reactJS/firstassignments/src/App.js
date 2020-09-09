@@ -1,22 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Registration from './components/page/Registration';
-import Footer from '../src/components/common/Footer';
-import Heading from '../src/components/common/Heading';
-import '../src/assets/Reg.css';
+import Footer from '../src/assignment2/components/common/Footer';
+import Menu from '../src/assignment2/components/common/Menu';
+import Header from '../src/assignment2/components/common/Header';
+
+
+
+import '../src/assignment2/assets/style.css';
+import {BrowserRouter} from "react-router-dom";
+import {Route,Switch} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-     <hr class="line0"></hr>
-    <Heading></Heading>
-      <hr class="line1"></hr>
-       <Registration></Registration>
-      <hr class="line2"></hr>
-    <Footer></Footer>
-     </div>
+    
+      <div>
+      <BrowserRouter>
+           <Header/>
+           <Menu/>
+           <Footer/>  
+      </BrowserRouter>
+      </div>
   );
-}
+};
 
 export default App;
