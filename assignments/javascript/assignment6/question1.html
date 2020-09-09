@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Larger</title>
+</head>
+<body>
+   <h2>Display Larger no</h2><br><br>
+   
+Number1:   <input type="number" id="no1"><br><br>
+Number2:   <input type="number" id="no2"><br><br>
+  
+  <button onclick="getLarger()">Show</button><br><br><br><br>
+Result:    <input type="number" id="result">    
+   
+   
+   <script type="text/javascript">
+    
+       function getLarger()
+       {
+           var no1=Number.parseFloat(document.getElementById("no1").value);
+           var no2=Number.parseFloat(document.getElementById("no2").value);
+           
+           //document.write(no1);
+           
+             if(no1>no2)
+                 {
+                  document.getElementById("result").value=no1; 
+                 }
+             else
+                 {
+                  document.getElementById("result").value=no2;    
+                 }
+       }
+    
+    </script> 
+   
+   
+    </body>
+</html>

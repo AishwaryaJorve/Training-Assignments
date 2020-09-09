@@ -1,0 +1,276 @@
+
+
+
+                                             Assignment 1st
+
+
+
+
+--------------------------------------------Logical Questions -----------------------------------------------------------
+
+
+
+
+
+
+
+1. Write a program to display the multiplication table from 5 to 10.
+   Ex -  5   6  .....10
+           ..............
+           ..............
+           ..............
+           50 60 ....100
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    
+    for(int r=1;r<=10;r++)
+
+    {
+
+        for(int c=5;c<=10;c++)
+
+        {
+
+            printf("%d ",r*c);
+
+        }
+
+        printf("\n");
+
+    }
+
+return 0;
+}
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+2. Write a program to print the following pattern
+  Ex -
+            * * * * * 
+            * * * * 
+            * * * 
+            * * 
+            *
+
+
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    int r,c;
+
+    for(r=0;r<=5;r++)
+
+    {
+
+        for(c=4;c>=r;c--)
+
+        {
+
+            printf("*");
+
+        }
+
+        printf("\n");
+
+    }
+
+}
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+3. Write a program to print the average of given number of array
+   int number[]={2,7,1,4,9,0,1,8}
+   int totalnumber[]=8; //Already the know the length of array
+
+
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+    
+ 
+    int number[]={2,7,1,4,9,0,1,8};
+
+     int i=0,sum=0,avg;
+ 
+     for(i=0;i<8;i++)
+    
+      {
+       
+        sum=sum+number[i];
+  
+      }
+   
+      avg=sum/8;
+    
+
+      printf("average of given no array: %d",avg);
+
+}
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+4. Accept the 3 numbers from user and print the maximum number from them.
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+  
+  int a,b,c,max;
+    
+  printf("Enter the no");
+
+  scanf("%d %d %d",&a,&b,&c);
+
+    if(a>b)
+
+     {
+   
+        max=a;
+
+        if(max>c)
+ 
+         {
+     
+              printf("%d is max no",max);
+ 
+         }
+
+        else
+
+        printf("%d is max no",c);
+
+    }
+
+    else
+ 
+    {
+    
+        max=b;
+    
+        if(max>c)
+ 
+        {
+  
+          printf("%d  is max no",max);
+
+        }
+
+        else
+  
+        printf("%d is max no",c);
+
+    }
+
+
+    return 0;
+
+}
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+5.Write a program for fibonacci series . 
+Ex - 0 1 1 2 3 5 8 13
+
+
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+    
+   int end,i,next,n1=0,n2=1;
+
+    printf("Enter the no where u want to stop");
+
+    scanf("%d",&end);
+
+    
+    for(i=1;i<=end;i++)
+     
+    {
+ 
+        printf("%d,",n1);
+
+         next=n1+n2;
+ 
+        n1=n2;
+ 
+        n2=next;
+
+         }
+
+}
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------    End       -----------------------------------------------------------
+

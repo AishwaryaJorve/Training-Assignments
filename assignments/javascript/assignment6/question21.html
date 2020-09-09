@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <h3>Enter the  5 Elements</h3>
+   
+      
+Number1:   <input type="text" id="no1"><br><br>
+Number2:   <input type="text" id="no2"><br><br>
+Number4:   <input type="text" id="no3"><br><br>
+Number5:   <input type="text" id="no4"><br><br>
+Number6:   <input type="text" id="no5"><br><br>
+   
+   <button onclick="go();">Show</button><br><br><br><br>
+   
+   
+   
+   <script type="text/javascript">
+    
+    function go()
+       {
+        
+        let i=0
+        let a=new Array();
+        a[0]=parseFloat(document.getElementById("no1").value);
+        a[1]=parseFloat(document.getElementById("no2").value);
+        a[2]=parseFloat(document.getElementById("no3").value);
+        a[3]=parseFloat(document.getElementById("no4").value);
+        a[4]=parseFloat(document.getElementById("no5").value);
+        
+        document.write(a);
+        
+        
+        
+        
+        
+    }
+    
+    
+    </script>
+   
+    </body>
+</html>

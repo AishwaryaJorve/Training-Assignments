@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Larger</title>
+</head>
+<body>
+   <h2>Multiplication sign</h2><br><br>
+   
+Number1:   <input type="text" id="no1"><br><br>
+Number2:   <input type="text" id="no2"><br><br>
+Number3:   <input type="text" id="no3"><br><br>
+  
+  <button onclick="go()">Show</button><br><br><br><br>
+  
+Result :  <input type="number" id="result">
+  
+  <script type="text/javascript">
+    
+    
+    function go()
+{
+    var no1=Number.parseFloat(document.getElementById("no1").value);
+    var no2=Number.parseFloat(document.getElementById("no2").value);
+    var no3=Number.parseFloat(document.getElementById("no3").value);
+    
+    
+      if (no1 == 0 || no2 == 0 || no3 == 0)
+       {
+           var r=no1 * no2 * no3;
+        document.getElementById("result").value=r;   
+        alert("Multiplication will be zero ");
+        return;
+      }
+    
+    
+      if (no1 > 0 && no2 > 0 && no3 > 0)
+       {
+           var r=no1 * no2 * no3;
+        document.getElementById("result").value=r;
+        alert("Multiplication of will have + sign");
+        return;
+      }
+       else if (no1 > 0 && no2 < 0 && no3 < 0)
+        {
+           var r=no1 * no2 * no3;
+        document.getElementById("result").value=r;
+        alert("Multiplication of  will have + sign");
+        return;
+      }
+       else if (no1 < 0 && no2 > 0 && no3 < 0)
+        {
+               var r=no1 * no2 * no3;
+        document.getElementById("result").value=r;
+        alert("Multiplication of  will have + sign");
+        return;
+      }
+      else if (no1 < 0 && no2 < 0 && no3 > 0)
+       {
+           var r=no1 * no2 * no3;
+        document.getElementById("result").value=r;
+        alert("Multiplication of  will have + sign");
+        return;
+      }
+      
+      else
+       {
+           var r=no1 * no2 * no3;
+        document.getElementById("result").value=r;
+        alert("Multiplication of  will have - sign");
+        return;
+      }
+     if (Number.isNaN(no1) || Number.isNaN(no2) || Number.isNaN(no3))
+     {
+        alert("Please enter valid input number");
+        return;
+      }
+    }
+    
+    </script>
+  
+  
+  
+  
+  
+    </body>
+</html>

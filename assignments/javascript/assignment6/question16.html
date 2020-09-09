@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>most frequent item</h1>
+    <script>
+         let a=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+        
+         let max = 1;
+         let temp;
+          let x = 0;
+         let size=a.length;
+for (let i=0; i<size; i++)
+{
+        for (let j=i; j<size; j++)
+        {
+                if (a[i] == a[j])
+                {        
+                 x++;
+                }        
+                if (max<x)
+                {
+                  max=x; 
+                  temp = a[i];
+                }
+        }
+        x=0;
+}
+document.write(temp+"  " +max);
+    </script>
+    </body>
+    </html>
