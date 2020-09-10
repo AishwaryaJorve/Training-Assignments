@@ -12,7 +12,7 @@ function Dashbord()
         </div>
         
         <div className="Dashbord">
-          <h1>Dashbord</h1>
+          <h1 className="Dashbord_h1">Dashbord</h1>
         </div>
         </div>
     );

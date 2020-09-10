@@ -43,20 +43,6 @@ table,td,th{
 }
 
 
-
-/*
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
-/*div.show{
-   margin-top: 0px;    
-   margin-left:405px; 
-   margin-bottom:30px;     
-   height:460px;
-   background-color:green;
-}*/
-/**/
-/**/
+.Dashbord_h1{
+    text-align: center;
+}

@@ -11,7 +11,7 @@ function Left(){
     
         <>
           <div class="left">
-             <Link to="/Dashbord">Dashbord</Link>
+             <Link to="/">Dashbord</Link>
             <Link to="/Student">Student</Link>
             <Link to="/Employee">Employee</Link>
            
