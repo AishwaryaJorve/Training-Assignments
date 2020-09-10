@@ -35,14 +35,21 @@ h1.stud{
 table{
     width: 70%;
     margin-left: 120px;
+     border: 1px solid black;
 }
 
 table,td,th{
+    border: 1px solid black;
     
-     border: 1px solid black;
 }
 
 
 .Dashbord_h1{
+    
+    text-align: center;
+}
+
+.Error_h1{
+    margin-top: 200px;
     text-align: center;
 }
