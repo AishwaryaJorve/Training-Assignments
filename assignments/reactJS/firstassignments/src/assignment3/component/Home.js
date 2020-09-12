@@ -132,7 +132,7 @@ return (
               <div className="form_control">
     
               <lable htmlFor='contact'>Contact No :</lable>
-              <input type='text' id='contact' name='contact' onChange={formik.handleChange} value={formik.values.contact}/>
+              <input type='number' id='contact' name='contact' onChange={formik.handleChange} value={formik.values.contact}/>
     
                {formik.errors.contact ? <div className='error'>{formik.errors.contact}</div> :null}
                      
