@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import Footer from '../src/assignment2/components/common/Footer';
-import Menu from '../src/assignment2/components/common/Menu';
-import Header from '../src/assignment2/components/common/Header';
+import Footer from '../src/assignment3/component/Footer';
 
+import Header from '../src/assignment3/component/Header';
+import Links from '../src/assignment3/component/Links';
 
-
-import '../src/assignment2/assets/style.css';
 import {BrowserRouter} from "react-router-dom";
-import {Route,Switch} from "react-router-dom";
+//import {Route,Switch} from "react-router-dom";
+
+import '../src/assignment3/assest/forms.css';
 
 
 function App() {
   return (
     
       <div>
-      <BrowserRouter>
+        <BrowserRouter>
            <Header/>
-           <Menu/>
-           <Footer/>  
-      </BrowserRouter>
+           <Links/>
+          <Footer/>  
+        </BrowserRouter>
       </div>
   );
 };

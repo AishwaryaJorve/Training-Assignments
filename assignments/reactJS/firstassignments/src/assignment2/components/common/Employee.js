@@ -11,6 +11,8 @@ function Employee()
             <Left/>
         </div>
         
+        
+        
         <div className="Dashbord">
             <h1 className="stud">Employee Data</h1>
         
