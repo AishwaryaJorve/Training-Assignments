@@ -1,18 +1,22 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-//import Home from './Home';
-//import About from './About';
-//import Contact from './Contact';
+import img from '../../assignment3/img/logo.png';
 function Header()
 {
     return(
     
         <div className="Header"> 
+         
+         <div className='Header_img'>
+            <img className='img' src={img}/>
+          </div>
+        
             <div className="Link">
-                <Link to="/">Home    </Link>&nbsp;&nbsp;&nbsp;&nbsp;
-                <Link to="/About">AboutUs    </Link> &nbsp;&nbsp;&nbsp;&nbsp;
-                <Link to="/Contact">ContactUs  </Link> &nbsp;&nbsp;&nbsp;&nbsp;
+                <Link className='lnk' to="/">Home    </Link>
+                <Link className='lnk' to="/About">AboutUs    </Link> 
+                <Link className='lnk' to="/Contact">ContactUs  </Link> 
              </div>
+         
         </div>
     
     );

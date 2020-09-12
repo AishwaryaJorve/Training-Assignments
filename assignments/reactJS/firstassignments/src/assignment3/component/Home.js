@@ -1,6 +1,6 @@
 import React from 'react';
 import {useFormik} from 'formik';
-
+import * as Yup from 'yup';
 
 
 
@@ -17,15 +17,18 @@ import {useFormik} from 'formik';
     
     
     
-    const onSubmit =values=>{
-        console.log('Form data',values)
+    const onSubmit =(values,{resetForm})=>{
+       
+        alert(JSON.stringify(values,null,2));
+         resetForm({values:''});
     }
     
     
     
     
     const validate=values=>{
-            
+        //values.fname     
+        
             let errors={}
             
             if(!values.fname)
@@ -79,7 +82,16 @@ function Home() {
         initialValues, 
         
         onSubmit,
-      
+//      
+//         validationSchema: Yup.object({
+//             
+//             fname:Yup.string().required("field is required")
+//             .min(3,'must be at least three character')
+//             .max(10,'at most 10 character only')
+//             
+//             
+//             
+//         })
         validate 
         
     })
