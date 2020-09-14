@@ -1,0 +1,27 @@
+[
+    {
+        "emp_id":1,
+        "emp_name":"Mahesh",
+        "emp_sal":30000
+    },
+    
+    
+    {
+        "emp_id":2,
+        "emp_name":"Shubhangi",
+        "emp_sal":40000
+    },
+    
+    {
+        "emp_id":3,
+        "emp_name":"Monali",
+        "emp_sal":33000
+    },
+    
+    {
+        "emp_id":5,
+        "emp_name":"Aishwarya",
+        "emp_sal":23000
+    }
+    
+]

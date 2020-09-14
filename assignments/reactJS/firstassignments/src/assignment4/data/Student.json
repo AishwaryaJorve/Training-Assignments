@@ -1,0 +1,25 @@
+[
+    {
+        "stud_id":1,
+        "stud_name":"Mahesh",
+        "stud_marks":100
+    },
+    
+    {
+        "stud_id":2,
+        "stud_name":"Shubhangi",
+        "stud_marks":99
+    },
+    
+    {
+        "stud_id":3,
+        "stud_name":"Monali",
+        "stud_marks":92
+    },
+    
+    {
+        "stud_id":3,
+        "stud_name":"Aishwarya",
+        "stud_marks":90
+    }
+]

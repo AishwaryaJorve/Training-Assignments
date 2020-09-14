@@ -1,26 +1,31 @@
+
+
+//     App.js file of assignment2
+
+
+
+
 import React from 'react';
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
-import Footer from '../src/assignment3/component/Footer';
+import Footer from '../src/assignment4/components/common/Footer';
 
-import Header from '../src/assignment3/component/Header';
-import Links from '../src/assignment3/component/Links';
-
+import Header from '../src/assignment4/components/common/Header';
+import Menu from '../src/assignment4/route/Menu';
+import '../src/assignment4/assets/style.css';
 import {BrowserRouter} from "react-router-dom";
-//import {Route,Switch} from "react-router-dom";
 
-import '../src/assignment3/assest/forms.css';
 
 
 function App() {
   return (
     
       <div>
-        <BrowserRouter>
+      <BrowserRouter>
            <Header/>
-           <Links/>
-          <Footer/>  
-        </BrowserRouter>
+           <Menu/>
+           <Footer/>  
+      </BrowserRouter>
       </div>
   );
 };

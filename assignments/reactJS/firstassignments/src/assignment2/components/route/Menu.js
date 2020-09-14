@@ -2,9 +2,10 @@ import React from 'react';
 
 import Student from './Student';
 import Employee from './Employee';
-import Dashbord from './Dashbord';
+import Dashbord from '../components/pages/Dashbord';
 import Error from './Error';
 import {Route,Switch} from "react-router-dom";
+
 function Menu(){
     
     return(
@@ -18,6 +19,6 @@ function Menu(){
             </Switch>
         </div>
     );
-};
+}
         
 export default Menu;         

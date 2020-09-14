@@ -1,0 +1,29 @@
+[
+    {
+        "emp_id":1,
+        "emp_name":"Mahesh",
+        "leave_date":"10/2/2019"
+    },
+    
+    
+    {
+        "emp_id":2,
+        "emp_name":"Shubhangi",
+         "leave_date":"16/7/2020"
+    },
+    
+    {
+        "emp_id":3,
+        "emp_name":"Monali",
+         "leave_date":"16/4/2018"
+    },
+    {
+        "emp_id":5,
+        "emp_name":"Aishwarya",
+         "leave_date":"30/4/2018"
+    }
+    
+]
+
+
+

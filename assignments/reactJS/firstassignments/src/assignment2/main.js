@@ -9,7 +9,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Footer from '../src/assignment2/components/common/Footer';
-import Menu from '../src/assignment2/components/common/Menu';
+import Menu from '../src/assignment2/components/route/Menu';
 import Header from '../src/assignment2/components/common/Header';
 
 
