@@ -15,14 +15,13 @@ present in the range otherwise status of each number like "n1 present" ,"n2 not 
 
 
 
-
 import java.util.Scanner;
 
 public class Question1 
 {
     public static void main(String[] args) {
     	Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the three ");
+		System.out.println("Enter the three Number ");
 		int no1=sc.nextInt();
 		int no2=sc.nextInt();
 		int no3=sc.nextInt();
@@ -70,31 +69,29 @@ public class Question1
 
 
 
+
 -------------------------------------------------------Output------------------------------------------------------------
 
 
 1.
 
+Enter the three Number 
 
-
-   Enter the three 
 300
-122
-533
+200
+544
 No1 is present
 No2 is not present
 No3 is present
 
 
 
-
 2
 
 
-
-Enter the three 
-399
-522
-260
+Enter the three Number 
+300
+400
+544
 All Present
 --------------------------------------------------End--------------------------------------------------------------------
