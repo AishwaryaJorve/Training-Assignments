@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<h2>accept a number as input and insert dashes (-) between each two even numbers</h2><br><br><br>
+
+Enter the no<input type="text" name="no"/>
+
+<button onclick="myFunction()">Show</button></br>
+Result:    <input type="number" id="result"/>
+
+<script type="text/javascript">
+function myFunction()
+{
+    var num=document.getElementById("no").value;
+ 
+     var ans="";
+     for(var i=0;i<num.length;i++)
+     {
+         var no1=Number.parseFloat(num[i]);
+         var no2=Number.parseFloat(num[i+1]);
+         if(no1%2==0 && no2%2==0)
+         {
+              ans=ans+no1+'-';
+         }
+         else
+         {
+             ans=ans+no1;
+         }
+     }
+     document.getElementById("result").value=ans;
+    
+
+</script>
+</body>
+</html>
