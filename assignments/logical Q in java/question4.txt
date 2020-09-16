@@ -1,0 +1,98 @@
+
+
+---------------------------------------------------Question 4------------------------------------------------------------
+
+
+
+
+write a program to display the following pattern 
+
+
+     if n=5
+
+                *              *                 
+                *    *         * 
+                *       *      * 
+                *         *    *  
+                *              *
+
+
+------------------------------------------------Solution-----------------------------------------------------------------
+
+
+
+import java.util.Scanner;
+
+public class Question4 
+{
+	public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+   		System.out.println("Enter the number ");
+   		System.out.println("if n= \n");
+   		
+   		int no1=sc.nextInt();
+   		
+   		for(int r=0;r<=no1;r++)
+   		{
+   			for(int c=0;c<=no1;c++)
+   			{
+   				if(c==0 || c==no1 || r==c)
+   				{
+   					System.out.print("*");
+   				}
+   				else
+   				{
+   					System.out.print(" ");
+   				}
+   				
+   			}
+   			System.out.println();
+   		}
+	}
+
+
+}
+
+
+
+
+
+
+---------------------------------------------------------Output-----------------------------------------------------------
+
+
+
+Ex1-
+
+
+
+Enter the number 
+if n= 
+
+6
+*     *
+**    *
+* *   *
+*  *  *
+*   * *
+*    **
+*     *
+
+
+
+Ex2-
+
+
+Enter the number 
+if n= 
+
+5
+*    *
+**   *
+* *  *
+*  * *
+*   **
+*    *
+
+
+------------------------------------------------------End-----------------------------------------------------------------

@@ -1,0 +1,83 @@
+
+-----------------------------------------------------Question 2 ---------------------------------------------------------
+
+
+
+write a program to display following pattern 
+    
+if n=6
+   
+   *   *   *    *   *   *
+   *                    *
+   *                    *
+   *                    * 
+   *                    * 
+   *    *   *    *  *   *
+
+
+
+
+------------------------------------------------------Solution ----------------------------------------------------------
+
+
+
+ import java.util.Scanner;
+
+public class Question2 
+{
+       public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+   		System.out.println("Enter the number ");
+   		int no1=sc.nextInt();
+   		
+   		for(int r=0;r<=no1;r++)
+   		{
+   			for(int c=0;c<=no1;c++)
+   			{
+   				if(r==0 || c==0 || r==no1 || c==no1)
+   				{
+   					System.out.print("*");
+   				}
+   				else
+   				{
+   					System.out.print(" ");
+   				}
+   				
+   			}
+   			System.out.println();
+   		}
+	}
+}
+
+
+
+
+-----------------------------------------------------Output---------------------------------------------------------------
+
+ex 1
+
+
+Enter the number 
+4
+*****
+*   *
+*   *
+*   *
+*****
+
+
+
+ex 2
+
+
+Enter the number 
+6
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
+
+--------------------------------------------------End---------------------------------------------------------------------

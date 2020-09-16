@@ -1,0 +1,100 @@
+
+----------------------------------------------------Question 1 ----------------------------------------------------------
+
+
+
+
+Write a program to accept 3 number n1,n2,n3, check these numbers are between 259 to 599 and print "All Present" if all 
+present in the range otherwise status of each number like "n1 present" ,"n2 not present"  start from n1 to n3
+
+
+
+
+
+----------------------------------------------------Solution--------------------------------------------------------------
+
+
+
+
+import java.util.Scanner;
+
+public class Question1 
+{
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the three ");
+		int no1=sc.nextInt();
+		int no2=sc.nextInt();
+		int no3=sc.nextInt();
+		
+		//System.out.println(no1+" "+no2+" "+no3);
+		
+		if((no1>=259&&no1<=599)&&(no2>=259&&no2<=599)&&(no3>=259&&no3<=599))
+		{
+		     System.out.println("All Present");
+		     
+		}
+			
+		else{
+		          if(no1>=259&&no1<=599)
+					    {
+						    System.out.println("No1 is present");
+					    }
+						else
+						{
+							System.out.println("No1 is not present");
+						}
+						
+						if(no2>=259&&no2<=599)
+					    {
+						    System.out.println("No2 is present");
+					    }
+						else
+						{
+							System.out.println("No2 is not present");
+						}
+						
+						if(no3>=259&&no3<=599)
+					    {
+						    System.out.println("No3 is present");
+					    }
+						else
+						{
+							System.out.println("No3 is not present");
+						}
+						
+		}			
+		
+	}
+}
+
+
+
+-------------------------------------------------------Output------------------------------------------------------------
+
+
+1.
+
+
+
+   Enter the three 
+300
+122
+533
+No1 is present
+No2 is not present
+No3 is present
+
+
+
+
+2
+
+
+
+Enter the three 
+399
+522
+260
+All Present
+--------------------------------------------------End--------------------------------------------------------------------
