@@ -1,0 +1,164 @@
+
+                                              
+
+                                               Worker Table
+
+
+
+
+
+
+create table Worker(worker_id number(10),constraints w_id primary key(worker_id),first_name varchar(20),
+last_name varchar(20),salary number(30), joining_date date,department varchar(10));
+
+
+
+
+
+insert into Worker values(001, 'Monika', 'Arora', 100000, '14-feb-20', 'HR');
+
+insert into Worker values(002, 'Niharika', 'Verma', 80000, '14-jun-11', 'Admin');
+
+insert into Worker values(003, 'Vishal', 'Singhal', 300000, '14-feb-20', 'HR');
+
+insert into Worker values(004, 'Amitabh', 'Singh', 500000, '14-feb-20', 'Admin');
+
+insert into Worker values(005, 'Vivek', 'Bhati', 500000, '14-jun-11', 'Admin');
+
+insert into Worker values(006, 'Vipul', 'Diwan', 200000, '14-jun-11', 'Account');
+
+insert into Worker values(007, 'Satish', 'Kumar', 75000, '14-jan-20', 'Account');
+
+insert into Worker values(008, 'Geetika', 'Chauhan', 90000, '14-apr-11', 'Admin');
+
+
+
+
+select * from Worker;
+
+
+
+1	Monika	Arora	100000	14-FEB-20	HR
+2      Niharika	Verma	80000	14-JUN-11	Admin
+3	Vishal	Singhal	300000	14-FEB-20	HR
+4	Amitabh	Singh	500000	14-FEB-20	Admin
+5	Vivek	Bhati	500000	14-JUN-11	Admin
+6	Vipul	Diwan	200000	14-JUN-11	Account
+7	Satish	Kumar	75000	14-JAN-20	Account
+8	Geetika	Chauhan	90000	14-APR-11	Admin
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+                                           Bonus Table
+
+
+
+
+
+
+
+
+create table Bonus(WORKER_REF_ID number(20),
+BONUS_AMOUNT number(20),
+BONUS_DATE date,
+constraints fBonus foreign key(WORKER_REF_ID) references worker(worker_id)
+on delete cascade);
+
+
+
+
+insert into Bonus values(001, 5000, '16-feb-20'); 
+insert into Bonus values(002, 3000, '16-jun-11');
+insert into Bonus values(003, 4000, '16-feb-20');
+insert into Bonus values(001, 4500, '16-feb-20');
+insert into Bonus values(002, 3500, '16-jun-11');
+
+
+
+
+
+select * from Bonus;
+
+
+
+
+1	5000	16-FEB-20
+2	3000	16-JUN-11
+3	4000	16-FEB-20
+1	4500	16-FEB-20
+2	3500	16-JUN-11
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+           
+                                          
+                                            Title Table
+
+
+
+
+
+
+create table title(WORKER_REF_ID number(20),
+WORKER_TITLE varchar(20),
+AFFECTED_FROM date,
+constraints ftitle foreign key(WORKER_REF_ID) references worker(worker_id)
+on delete cascade);
+
+
+
+
+
+insert into title values(001, 'Manager', '20-feb-2016');
+
+insert into title values(002, 'Executive', '11-jun-2016');
+
+insert into title values(008, 'Executive', '11-jun-2016');
+
+insert into title values(005, 'Manager', '11-jun-2016');
+
+insert into title values(004, 'Asst. Manager', '11-jun-2016');
+
+insert into title values(007, 'Executive', '11-jun-2016');
+
+insert into title values(006, 'Lead', '11-jun-2016');
+
+insert into title values(003, 'Lead', '11-jun-2016');
+
+
+
+
+commit;
+
+
+
+select * from title;
+
+
+
+
+
+1	Manager	  20-FEB-16
+2     Executive	  11-JUN-16
+8     Executive	  11-JUN-16
+5	Manager	  11-JUN-16
+4 Asst. Manager	  11-JUN-16
+7    Executive	  11-JUN-16
+6	Lead	  11-JUN-16
+3	Lead	  11-JUN-16
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------------------------

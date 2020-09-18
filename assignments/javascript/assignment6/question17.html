@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	Enter String <input type="text" id="Str"><br/><br/>
+	<button onclick="myFunction()">Show</button><br/><br/><br/><br/>
+    Result :<input type="text" id="result">
+    
+    <script type="text/javascript">
+    	function myFunction(){
+         
+          let str=document.getElementId("Str").value;
+          if(!str)
+          {
+          	alert("Not valid Input");
+          	return;
+          }
+          var i=0;
+          let newStr="";
+          for(i=0;i<str.length;i++)
+          {
+          	if(str[i]>"A"&&str[i]<"Z")
+          	{
+                 newStr=newStr+str[i].toLowerCase();
+          	}
+          	else
+          	{
+          		newStr=newStr+str[i].toUpperCase();
+          	}
+          }
+            //document.getElementId("result").value=newStr;
+            document.write(newStr);
+    	}
+    </script>
+
+</body>
+</html>
