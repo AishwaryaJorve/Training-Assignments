@@ -421,6 +421,15 @@ ans->  select first_name,salary,department from worker where worker_id>(select c
 
 --------------------------------------------------------------------------------------------------------------------------
 
+Q-45. Write an SQL query to print the name of employees having the highest salary in each department.
+
+ans->select first_name, max(Salary) from worker group by department;
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
 
 Q-46. Write an SQL query to fetch three max salaries from a table.
 
