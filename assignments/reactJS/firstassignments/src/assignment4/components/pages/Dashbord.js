@@ -1,5 +1,6 @@
 import React from 'react';
 import Left from '../common/Left';
+import '../../assets/dashbord.css';
 
 function Dashbord()
 {

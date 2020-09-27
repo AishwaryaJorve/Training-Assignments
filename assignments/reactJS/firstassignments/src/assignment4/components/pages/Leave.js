@@ -11,44 +11,33 @@ function Employee()
             <Left/>
         </div>
         
-        
-        
         <div className="Dashbord">
             <h1 className="stud">Leave Data</h1>
-        
-                    <table className="table">
+                <table className="table">
                        <thead>
-                          
                             <th>Id</th>
                             <th>Employee Name</th> 
                             <th>Leave Date</th>
                        </thead>
         
-                       <tbody>
+                        <tbody>
                         {LeaveData.map((data)=>{
-                               return(
-                               
-                                   <tr>
+                            return(
+                               <tr>
                                    
-                                      <td>{data.emp_id}</td>
-                                      <td>{data.emp_name}</td>
-                                      <td>{data.leave_date}</td>
+                                  <td>{data.emp_id}</td>
+                                  <td>{data.emp_name}</td>
+                                  <td>{data.leave_date}</td>
                                    
-                                   </tr>
-                               );
-                             }
-                             )}
-                     </tbody>
+                                </tr>
+                              );
+                            }
+                         )}
+                        </tbody>
                 </table>
-        
-        
         </div>
-        
-        
       </div>      
     );
-    
 }
-
 export default Employee;
  

@@ -6,49 +6,36 @@ function Employee()
 {
     return(
       <div>
-        
+
         <div className="column">
             <Left/>
         </div>
-        
-        
-        
-        <div className="Dashbord">
-            <h1 className="stud">Employee Data</h1>
-        
-                    <table className="table">
-                       <thead>
-                          
-                            <th>Id</th>
+
+          <div className="Dashbord">
+            <h1 className="Title">Employee Data</h1>
+                  <table className="table">
+                        <thead>
+                          <th>Id</th>
                             <th>Employee Name</th> 
                             <th>salary</th>
-                       </thead>
+                        </thead>
         
-                       <tbody>
-                        {EmpData.map((data)=>{
+                        <tbody>
+                         {EmpData.map((data)=>{
                                return(
-                               
-                                   <tr>
-                                   
-                                      <td>{data.emp_id}</td>
-                                      <td>{data.emp_name}</td>
-                                      <td>{data.emp_sal}</td>
-                                   
-                                   </tr>
+                               <tr>
+                                <td>{data.emp_id}</td>
+                                  <td>{data.emp_name}</td>
+                                  <td>{data.emp_sal}</td>
+                                </tr>
                                );
                              }
-                             )}
-                     </tbody>
-                </table>
-        
-        
-        </div>
-        
-        
-      </div>      
+                           )}
+                        </tbody>
+                  </table>
+          </div>
+        </div>      
     );
-    
 }
-
 export default Employee;
  

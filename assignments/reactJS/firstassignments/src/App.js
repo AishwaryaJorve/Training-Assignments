@@ -8,13 +8,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Footer from '../src/assignment4/components/common/Footer';
+import Footer from '../src/assignment2/components/common/Footer';
+import Menu from '../src/assignment2/route/Menu';
+import Header from '../src/assignment2/components/common/Header';
 
-import Header from '../src/assignment4/components/common/Header';
-import Menu from '../src/assignment4/route/Menu';
-import '../src/assignment4/assets/style.css';
+
+
+import '../src/assignment2/assets/style.css';
 import {BrowserRouter} from "react-router-dom";
-
+import {Route,Switch} from "react-router-dom";
 
 
 function App() {

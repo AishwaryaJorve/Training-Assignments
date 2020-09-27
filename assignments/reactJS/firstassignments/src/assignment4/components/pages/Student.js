@@ -12,7 +12,7 @@ function Student()
         </div>
         
         <div className="Dashbord">
-            <h1 className="stud">Students Data</h1>
+            <h1 className="Title">Students Data</h1>
         
                     <table className="table">
                        <thead>

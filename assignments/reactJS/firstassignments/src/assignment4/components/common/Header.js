@@ -1,12 +1,10 @@
 import React from 'react';
-
+import '../../assets/header.css'
 function Header()
 {
     return(
     
-        <div class="column1"></div>
-    
+        <div class="Header"></div>
     );
 }
-
 export default Header;
