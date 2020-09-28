@@ -18,9 +18,16 @@ class StudentService{
     	'${newStudnet.last_name}',
     	'${newStudnet.marks}')`;
 
-    	let addedStudentResponse=this.databaseService.executeQuery(query);
+    	let addedStudentResponse=await this.databaseService.executeQuery(query);
     	return addedStudentResponse;
     }
-
+     
+     async deleteStudent(studentId)
+     {
+        let query=`delete from student_Information where Student_id=
+        ${studentId}`;
+        let deletedStudentResponse=await this.databaseService.executeQuery(query);
+        return deletedStudentResponse; 
+     }
 }
 module.exports=StudentService;
